@@ -79,8 +79,8 @@ function setPublic() {
         }
         searchBox.appendChild(searchContain)
         searchBox.appendChild(searchSubmit)
-        var topNavTitle = newEle("a", "id=top-nav-title", "Penyo 博客")
-        topNavTitle.setAttribute("href", "https://penyoofficial.github.io/blog/")
+        var topNavTitle = newEle("a", "id=top-nav-title", "Big Orangeの博客")
+        topNavTitle.setAttribute("href", "https://BigOOOrange.github.io/")
     }
     topNav.appendChild(switchTheme)
     if (html.getAttribute("pagetype") == "pv")
@@ -101,7 +101,7 @@ function setPublic() {
     } catch (e) {
         display404(mainContain, "我们与数据库失联了")
     }
-    mainContain.appendChild(newEle("div", "id=copyright", "© 2023 Penyo. All rights reserved. "))
+    mainContain.appendChild(newEle("div", "id=copyright", "© 2023 BigOOOrange. All rights reserved. Powered by Penyo. "))
     body.appendChild(mainContain)
     // 回顶
     var backToTop = newEle("a", "id=back-to-top", "▲")
@@ -119,7 +119,7 @@ function display404(container, errorInfo) {
 
 /** 添加符合要求的文章结构。 */
 function addArticle(container) {
-    var data = getJSONObj("https://penyoofficial.github.io/blog-database/articles.json")
+    var data = getJSONObj("https://BigOOOrange.github.io/BIGORANGEDATABASE/BG.json")
     var isEmpty = true
     if (html.getAttribute("pagetype") == "pv") { // 主页
         function addToPv(a) {
